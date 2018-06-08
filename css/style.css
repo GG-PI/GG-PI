@@ -6,17 +6,25 @@ body {
 	margin: 0;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 header {
 	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
 	z-index: 99;
+	padding: 1em;
+	background-color: rgba(0, 0, 0, 0.04);
+	animation: header 2s ease-out;
 }
 
 header h1 {
 	display: inline-block;
 	margin: 0;
+	color: #15db15;
 }
 
 .header-menu {
@@ -25,6 +33,9 @@ header h1 {
 
 .header-menu a {
 	line-height: 2em;
+	padding: 0 0.5em;
+	text-decoration: none;
+	color: lightgray;
 }
 
 .landing-page {
@@ -35,7 +46,7 @@ header h1 {
 	background-image: linear-gradient(
       rgba(0, 0, 0, 0.45), 
       rgba(0, 0, 0, 0.45)),
-	  url("../images/landing-page.jpg");
+	  url("../images/landing-page.gif");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -48,20 +59,206 @@ header h1 {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: #d6bfbf;
+	animation: title 1s ease-out;
 }
 
-section {
+.img-block-left {
 	position: relative;
 	width: 100%;
-	background-color: lightgray;
+	background-color: rgb(59, 180, 119);;
 }
 
-section img {
+.img-block-left:hover div {
+	animation: img-block-left 3.5s linear forwards;
+}
+
+.img-block-left img {
 	position: relative;
-	width: 75%;
-	float: right;
+	margin-top: 5em;
+	margin-left: 7em;
+	width: calc(100% - 7em);
+	min-height: calc(100% - 5em);
 }
 
-section div {
+.img-block-left div {
+	z-index: 9;
 	position: absolute;
+	margin-top: 1.75em;
+	margin-left: -45vw/*1.75em*/;
+	width: 40vw;
+	height: auto;
+	padding: 1em;
+	background-color: rgb(44, 48, 46);
+	color: rgb(179, 191, 186);
+}
+
+.img-block-left div h3 {
+	z-index: 11;
+	background-color: rgb(44, 48, 46);
+	color: #15db15;
+	padding: 0 2em;
+	margin: 0;
+	position: absolute;
+	top: 0.5em;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.img-block-left div p {
+	border: 2px solid #15db15;
+	position: relative;
+	height: 100%;
+	margin: 0;
+	padding: 1.5em 1em;
+}
+
+.img-block-right {
+	position: relative;
+	width: 100%;
+	background-color: rgb(59, 180, 119);;
+}
+
+.img-block-right:hover div {
+	animation: img-block-right 3.5s linear forwards;
+}
+
+.img-block-right img {
+	position: relative;
+	margin-top: 5em;
+	margin-right: 7em;
+	width: calc(100% - 7em);
+	min-height: calc(100% - 5em);
+}
+
+.img-block-right div {
+	z-index: 9;
+	position: absolute;
+	margin-top: 1.75em;
+	right: 0;
+	margin-right: -45vw;
+	width: 40vw;
+	height: auto;
+	padding: 1em;
+	background-color: rgb(44, 48, 46);
+	color: rgb(179, 191, 186);
+}
+
+.img-block-right div h3 {
+	z-index: 11;
+	background-color: rgb(44, 48, 46);
+	color: #15db15;
+	padding: 0 2em;
+	margin: 0;
+	position: absolute;
+	top: 0.5em;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.img-block-right div p {
+	border: 2px solid #15db15;
+	position: relative;
+	height: 100%;
+	margin: 0;
+	padding: 1.5em 1em;
+}
+
+
+
+/* *************** KEY FRAMES ***************** */
+
+@keyframes title {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes header {
+	from {
+		top: -7%;
+	}
+
+	to {
+		top: 0;
+	}
+}
+
+@keyframes img-block-left {
+  0%{
+  	transform: rotate(20deg);
+  	margin-left: -45vw;
+  }
+
+  54%{
+  	transform: rotate(20deg) ;
+  	margin-left: calc(1.75em - 20px);
+  }
+
+  60% {
+    transform:  rotate(0deg) ;
+    margin-left: calc(1.75em);
+  }
+  68% {
+    transform:  rotate(-15deg) ;
+    margin-left: calc(1.75em + 15px);
+  }
+  76% {
+    transform:  rotate(10deg) ;
+    margin-left: calc(1.75em - 10px);
+  }
+  84% {
+    transform:  rotate(-5deg);
+    margin-left: calc(1.75em + 5px);
+  }
+  92% {
+    transform:  rotate(5deg);
+    margin-left: calc(1.75em - 5px);
+  }
+  100% {
+    transform:  rotate(0deg) ;
+    margin-left: calc(1.75em);
+  }
+
+}
+
+@keyframes img-block-right {
+  0%{
+  	transform: rotate(-20deg);
+  	margin-right: -45vw;
+  }
+
+  64%{
+  	transform: rotate(-20deg) ;
+  	margin-right: calc(1.75em - 20px);
+  }
+
+  70% {
+    transform:  rotate(0deg) ;
+    margin-right: calc(1.75em);
+  }
+  76% {
+    transform:  rotate(15deg) ;
+    margin-right: calc(1.75em + 15px);
+  }
+  82% {
+    transform:  rotate(-10deg) ;
+    margin-right: calc(1.75em - 10px);
+  }
+  88% {
+    transform:  rotate(5deg);
+    margin-right: calc(1.75em + 5px);
+  }
+  94% {
+    transform:  rotate(-5deg);
+    margin-right: calc(1.75em - 5px);
+  }
+  100% {
+    transform:  rotate(0deg) ;
+    margin-right: calc(1.75em);
+  }
+
 }
