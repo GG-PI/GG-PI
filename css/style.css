@@ -46,33 +46,48 @@ header h1 {
 	background-image: linear-gradient(
       rgba(0, 0, 0, 0.45), 
       rgba(0, 0, 0, 0.45)),
-	  url("../images/landing-page.gif");
+	  url("../images/landing-page-even-shorter.gif");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
 }
 
-.landing-page h2 {
+.landing-page h1 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: #d6bfbf;
 	animation: title 1s ease-out;
+	font-size: 3em;
+	margin: 0;
+	color: white;
 }
 
-.img-block-left {
+.landing-page h2 {
+	position: absolute;
+	top: calc(50% + 2em);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #d6bfbf;
+	animation: title 1s ease-out;
+	margin: 0;
+	font-size: 1.5em;
+	color: rgb(179, 191, 186);
+}
+
+.section-left {
 	position: relative;
 	width: 100%;
-	background-color: rgb(59, 180, 119);;
+	background-color: rgb(59, 180, 119);
 }
 
-.img-block-left:hover div {
-	animation: img-block-left 3.5s linear forwards;
+.section-left:hover div {
+	animation: section-left 1.5s linear forwards;
 }
 
-.img-block-left img {
+.section-left img {
 	position: relative;
 	margin-top: 5em;
 	margin-left: 7em;
@@ -80,7 +95,7 @@ header h1 {
 	min-height: calc(100% - 5em);
 }
 
-.img-block-left div {
+.section-left div {
 	z-index: 9;
 	position: absolute;
 	margin-top: 1.75em;
@@ -92,11 +107,11 @@ header h1 {
 	color: rgb(179, 191, 186);
 }
 
-.img-block-left div h3 {
+.section-left div h3 {
 	z-index: 11;
 	background-color: rgb(44, 48, 46);
 	color: #15db15;
-	padding: 0 2em;
+	padding: 0 1em;
 	margin: 0;
 	position: absolute;
 	top: 0.5em;
@@ -104,7 +119,7 @@ header h1 {
 	transform: translateX(-50%);
 }
 
-.img-block-left div p {
+.section-left div p {
 	border: 2px solid #15db15;
 	position: relative;
 	height: 100%;
@@ -112,17 +127,17 @@ header h1 {
 	padding: 1.5em 1em;
 }
 
-.img-block-right {
+.section-right {
 	position: relative;
 	width: 100%;
-	background-color: rgb(59, 180, 119);;
+	background-color: rgb(59, 180, 119);
 }
 
-.img-block-right:hover div {
-	animation: img-block-right 3.5s linear forwards;
+.section-right:hover div {
+	animation: section-right 1.5s linear forwards;
 }
 
-.img-block-right img {
+.section-right img {
 	position: relative;
 	margin-top: 5em;
 	margin-right: 7em;
@@ -130,7 +145,7 @@ header h1 {
 	min-height: calc(100% - 5em);
 }
 
-.img-block-right div {
+.section-right div {
 	z-index: 9;
 	position: absolute;
 	margin-top: 1.75em;
@@ -143,7 +158,7 @@ header h1 {
 	color: rgb(179, 191, 186);
 }
 
-.img-block-right div h3 {
+.section-right div h3 {
 	z-index: 11;
 	background-color: rgb(44, 48, 46);
 	color: #15db15;
@@ -155,7 +170,7 @@ header h1 {
 	transform: translateX(-50%);
 }
 
-.img-block-right div p {
+.section-right div p {
 	border: 2px solid #15db15;
 	position: relative;
 	height: 100%;
@@ -163,6 +178,107 @@ header h1 {
 	padding: 1.5em 1em;
 }
 
+.section-back-left {
+	position: relative;
+	width: 100%;
+	background-color: rgb(59, 180, 119);
+}
+
+.section-back-left .image-holder {
+	position: relative;
+	z-index: 5;
+	top: 10%;
+	height: 80%;
+	width: 65%;
+	left: 35%;
+	overflow: hidden;
+	border: 5px solid rgb(162, 237, 130);
+}
+
+.section-back-left img {
+	height: 100%;
+}
+
+.section-back-left div {
+	position: absolute;
+	z-index: 1;
+	height: 94%;
+	width: 60%;
+	background-color: rgb(44, 48, 46);
+	color: rgb(179, 191, 186);
+	left: 2%;
+	top: 3%;
+}
+
+.section-back-left div h3 {
+	position: absolute;
+	z-index: 2;
+	left: 25%;
+	transform: translateX(-50%);
+	top: 0.35em;
+	margin: 0;
+	padding: 0 1em;
+	background-color: rgb(44, 48, 46);
+}
+
+.section-back-left div p {
+	border: 2px solid #15db15;
+	position: relative;
+	margin: 1em;
+	padding: 1.5em 45% 1.5em 1em;
+	height: calc(100% - 2em);
+}
+
+.section-back-right {
+	position: relative;
+	width: 100%;
+	background-color: rgb(59, 180, 119);
+}
+
+.section-back-right .image-holder {
+	position: relative;
+	z-index: 5;
+	top: 2%;
+	height: 90%;
+	width: 50%;
+	left: 15%;
+	overflow: hidden;
+	border: 5px solid rgb(162, 237, 130);
+}
+
+.section-back-right img {
+	height: 100%;
+}
+
+.section-back-right div {
+	position: absolute;
+	z-index: 1;
+	height: 80%;
+	width: 86%;
+	background-color: rgb(44, 48, 46);
+	color: rgb(179, 191, 186);
+	left: 11%;
+	bottom: 3%;
+}
+
+.section-back-right div h3 {
+	position: absolute;
+	z-index: 2;
+	left: 80%;
+	transform: translateX(-50%);
+	top: 0.35em;
+	margin: 0;
+	padding: 0 1em;
+	background-color: rgb(44, 48, 46);
+}
+
+.section-back-right div p {
+	border: 2px solid #15db15;
+	position: relative;
+	margin: 1em;
+	padding: 1.5em 1em 1.5em calc(60% + 1em);
+	height: calc(100% - 2em);
+}
 
 
 /* *************** KEY FRAMES ***************** */
@@ -187,7 +303,7 @@ header h1 {
 	}
 }
 
-@keyframes img-block-left {
+@keyframes section-left {
   0%{
   	transform: rotate(20deg);
   	margin-left: -45vw;
@@ -225,34 +341,34 @@ header h1 {
 
 }
 
-@keyframes img-block-right {
+@keyframes section-right {
   0%{
   	transform: rotate(-20deg);
   	margin-right: -45vw;
   }
 
-  64%{
+  54%{
   	transform: rotate(-20deg) ;
   	margin-right: calc(1.75em - 20px);
   }
 
-  70% {
+  60% {
     transform:  rotate(0deg) ;
     margin-right: calc(1.75em);
   }
-  76% {
+  68% {
     transform:  rotate(15deg) ;
     margin-right: calc(1.75em + 15px);
   }
-  82% {
+  76% {
     transform:  rotate(-10deg) ;
     margin-right: calc(1.75em - 10px);
   }
-  88% {
+  84% {
     transform:  rotate(5deg);
     margin-right: calc(1.75em + 5px);
   }
-  94% {
+  92% {
     transform:  rotate(-5deg);
     margin-right: calc(1.75em - 5px);
   }
