@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//DE'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg enable-background="new 0 0 100 100" version="1.1" viewBox="0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+		<circle cx="50" cy="50" r="47.5" fill="none" stroke="#438881" stroke-dasharray="12.4322,12.4322" stroke-miterlimit="10">
+			<animateTransform attributeName="transform" attributeType="XML" dur="10s" from="0 50 50" repeatCount="indefinite" to="360 50 50" type="rotate"/>
+		</circle>
+		<circle cx="50" cy="50" r="37.5" fill="#438881"/>
+		<path d="m35.917 57.75c0 1.243-1.007 2.25-2.25 2.25s-2.25-1.007-2.25-2.25v-17.667c0-1.243 1.007-2.25 2.25-2.25s2.25 1.007 2.25 2.25v17.667z" fill="#fff">
+			<animateTransform attributeName="transform" attributeType="XML" dur="1s" repeatCount="indefinite" type="translate" values="0,6;0,-6;0,6"/>
+		</path>
+		<path d="m44.083 57.75c0 1.243-1.007 2.25-2.25 2.25s-2.25-1.007-2.25-2.25v-17.667c0-1.243 1.007-2.25 2.25-2.25s2.25 1.007 2.25 2.25v17.667z" fill="#fff">
+			<animateTransform attributeName="transform" attributeType="XML" dur="2s" repeatCount="indefinite" type="translate" values="0,6;0,-6;0,6"/>
+		</path>
+		<path d="m52.25 57.75c0 1.243-1.007 2.25-2.25 2.25s-2.25-1.007-2.25-2.25v-17.667c0-1.243 1.007-2.25 2.25-2.25s2.25 1.007 2.25 2.25v17.667z" fill="#fff">
+			<animateTransform attributeName="transform" attributeType="XML" dur="1s" repeatCount="indefinite" type="translate" values="0,6;0,-6;0,6"/>
+		</path>
+		<path d="m60.417 57.75c0 1.243-1.007 2.25-2.25 2.25s-2.25-1.007-2.25-2.25v-17.667c0-1.243 1.007-2.25 2.25-2.25s2.25 1.007 2.25 2.25v17.667z" fill="#fff">
+			<animateTransform attributeName="transform" attributeType="XML" dur="2s" repeatCount="indefinite" type="translate" values="0,6;0,-6;0,6"/>
+		</path>
+		<path d="m68.583 57.75c0 1.243-1.007 2.25-2.25 2.25s-2.25-1.007-2.25-2.25v-17.667c0-1.243 1.007-2.25 2.25-2.25s2.25 1.007 2.25 2.25v17.667z" fill="#fff">
+			<animateTransform attributeName="transform" attributeType="XML" dur="1s" repeatCount="indefinite" type="translate" values="0,6;0,-6;0,6"/>
+		</path>
+</svg>
