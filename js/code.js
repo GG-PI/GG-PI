@@ -31,3 +31,11 @@ var getElemDistance = function ( elem ) {
     }
     return location >= 0 ? location : 0;
 };
+
+/*
+*
+*	Fade in animation when scrolled x distance
+*	Header change background when scrolled 100vh-header_height
+*	
+*
+*/
