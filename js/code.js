@@ -9,6 +9,7 @@ window.onscroll = function() {
 	console.log(getElemDistance(img));
 	var scrolltop = window.pageYOffset - getElemDistance(img);
 	img.style.backgroundPosition = scrolltop / 10 - img.offsetWidth/5 + 'px center';
+	changeHeader();
 }
 
 function showBody() {
@@ -31,6 +32,16 @@ var getElemDistance = function ( elem ) {
     }
     return location >= 0 ? location : 0;
 };
+
+function changeHeader() {
+	var header = document.getElementsByTagName("header")[0];
+	if(window.pageYOffset + header.offsetHeight >= window.innerHeight) {
+		header.style.background = "rgba(0, 0, 0, 0.7)";
+	}else {
+		header.style.background = "rgba(0, 0, 0, 0.04)";
+	}
+
+}
 
 /*
 *
