@@ -6,10 +6,10 @@ window.onload = function(){
 
 window.onscroll = function() {
 	var img = document.getElementById("scroll");
-	console.log(getElemDistance(img));
 	var scrolltop = window.pageYOffset - getElemDistance(img);
 	img.style.backgroundPosition = scrolltop / 10 - img.offsetWidth/5 + 'px center';
 	changeHeader();
+	fadeInAndOutSection();
 }
 
 function showBody() {
@@ -41,6 +41,18 @@ function changeHeader() {
 		header.style.background = "rgba(0, 0, 0, 0.04)";
 	}
 
+}
+
+function fadeInAndOutSection() {
+	for (var i = document.getElementsByClassName("section").length - 1; i >= 0; i--) {
+		var section = document.getElementsByClassName("section")[i];
+		var fromTop = section.getBoundingClientRect().top;
+		if(fromTop <= window.innerHeight * 0.75 && fromTop >= window.innerHeight * -0.30) {
+			section.style.opacity = "1";
+		}else {
+			section.style.opacity = "0";
+		}
+	}
 }
 
 /*
