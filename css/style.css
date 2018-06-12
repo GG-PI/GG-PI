@@ -4,7 +4,7 @@ html{
 
 body {
 	margin: 0;
-	background-color: rgb(59, 180, 119);
+	background: rgb(59, 180, 119);
 }
 
 * {
@@ -14,7 +14,7 @@ body {
 section {
 	visibility: hidden;
 	opacity: 0;
-	transition: visibility 0s, opacity 2s ease-in;
+	transition: visibility 0s, opacity 1s ease-in;
 }
 
 .loader {
@@ -74,8 +74,8 @@ header h1 {
 	max-width: none;
 	height: 100vh;
 	background-image: linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)),
+      rgba(59, 180, 119, 0.3), 
+      rgba(59, 180, 119, 0.4)),
 	  url("../images/landing-page.gif");
 	background-size: cover;
 	background-repeat: no-repeat;

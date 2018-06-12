@@ -47,7 +47,7 @@ function fadeInAndOutSection() {
 	for (var i = document.getElementsByClassName("section").length - 1; i >= 0; i--) {
 		var section = document.getElementsByClassName("section")[i];
 		var fromTop = section.getBoundingClientRect().top;
-		if(fromTop <= window.innerHeight * 0.75 && fromTop >= window.innerHeight * -0.30) {
+		if(fromTop <= window.innerHeight * 0.65 && fromTop >= window.innerHeight * -0.60) {
 			section.style.opacity = "1";
 		}else {
 			section.style.opacity = "0";
