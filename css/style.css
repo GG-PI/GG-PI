@@ -487,3 +487,12 @@ header h1 {
 	#socket {background-image: url('../images/socket.jpg');}
 	#inside2 {background-image: url('../images/inside2.jpg');}
 }
+
+/*
+*	
+*	Header menu buttons aanpassen, ook aan breete 
+*	Resize div naast foto bij resizen browser, dat text niet weg vliegt
+*	Parralax scrolling
+*	Exporter voor prefix en compatibility met alle browsers
+*
+*/
