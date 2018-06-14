@@ -399,7 +399,7 @@ header h1 {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	background-attachment: initial;
+	background-attachment: scroll;
 	}
 }
 
