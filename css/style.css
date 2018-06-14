@@ -438,9 +438,12 @@ header h1 {
 	.section .image-holder {
 	position: absolute;
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
 	background-attachment: scroll;
+	background-size:cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-position: center center; 
 	}
 }
 
