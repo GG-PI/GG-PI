@@ -393,14 +393,6 @@ header h1 {
 	#code {background-image: url('../images/480p/code.png');}
 	#socket {background-image: url('../images/480p/socket.jpg');}
 	#inside2 {background-image: url('../images/480p/inside2.jpg');}
-
-	.section .image-holder {
-	position: absolute;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	background-attachment: scroll;
-	}
 }
 
 @media screen and (min-width: 481px) and (max-width: 668px) {
@@ -428,6 +420,55 @@ header h1 {
 }
 
 @media screen and (min-width: 1081px) {
+	#drawing {background-image: url('../images/drawing.jpg');}
+	#test-guy {background-image: url('../images/testing-guy.jpg');}
+	#code {background-image: url('../images/code.png');}
+	#socket {background-image: url('../images/socket.jpg');}
+	#inside2 {background-image: url('../images/inside2.jpg');}
+}
+
+/* ---------- IOS ------------ */
+@media screen and (max-device-width: 481px) {
+	#drawing {background-image: url('../images/480p/drawing.jpg');}
+	#test-guy {background-image: url('../images/480p/testing-guy.jpg');}
+	#code {background-image: url('../images/480p/code.png');}
+	#socket {background-image: url('../images/480p/socket.jpg');}
+	#inside2 {background-image: url('../images/480p/inside2.jpg');}
+
+	.section .image-holder {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: scroll;
+	}
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 668px) {
+	#drawing {background-image: url('../images/667p/drawing.jpg');}
+	#test-guy {background-image: url('../images/667p/testing-guy.jpg');}
+	#code {background-image: url('../images/667p/code.png');}
+	#socket {background-image: url('../images/667p/socket.jpg');}
+	#inside2 {background-image: url('../images/667	p/inside2.jpg');}
+}
+
+@media screen and (min-device-width: 668px) and (max-device-width: 769px) {
+	#drawing {background-image: url('../images/768p/drawing.jpg');}
+	#test-guy {background-image: url('../images/768p/testing-guy.jpg');}
+	#code {background-image: url('../images/768p/code.png');}
+	#socket {background-image: url('../images/768p/socket.jpg');}
+	#inside2 {background-image: url('../images/768p/inside2.jpg');}
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1081px) {
+	#drawing {background-image: url('../images/1080p/drawing.jpg');}
+	#test-guy {background-image: url('../images/1080p/testing-guy.jpg');}
+	#code {background-image: url('../images/1080p/code.png');}
+	#socket {background-image: url('../images/1080p/socket.jpg');}
+	#inside2 {background-image: url('../images/1080p/inside2.jpg');}
+}
+
+@media screen and (min-device-width: 1081px) {
 	#drawing {background-image: url('../images/drawing.jpg');}
 	#test-guy {background-image: url('../images/testing-guy.jpg');}
 	#code {background-image: url('../images/code.png');}
