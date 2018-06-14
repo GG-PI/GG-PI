@@ -436,14 +436,23 @@ header h1 {
 	#inside2 {background-image: url('../images/480p/inside2.jpg');}
 
 	.section .image-holder {
-	position: absolute;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-size:cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-	background-position: center center; 
+		position: absolute;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size:cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		-o-background-size: cover;
+		background-position: center center; 
+	}
+	.landing-page {
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size:cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		-o-background-size: cover;
+		background-position: center center; 
 	}
 }
 
