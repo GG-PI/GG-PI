@@ -141,7 +141,7 @@ header h1 {
 	position: absolute;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+	background-position: center center;
 	background-attachment: fixed;
 }
 
@@ -393,6 +393,14 @@ header h1 {
 	#code {background-image: url('../images/480p/code.png');}
 	#socket {background-image: url('../images/480p/socket.jpg');}
 	#inside2 {background-image: url('../images/480p/inside2.jpg');}
+
+	.section .image-holder {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: initial;
+	}
 }
 
 @media screen and (min-width: 481px) and (max-width: 668px) {
