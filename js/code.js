@@ -5,9 +5,9 @@ window.onload = function(){
 }
 
 window.onscroll = function() {
-	var img = document.getElementById("scroll");
-	var scrolltop = window.pageYOffset - getElemDistance(img);
-	img.style.backgroundPosition = scrolltop / 10 - img.offsetWidth/5 + 'px center';
+	// var img = document.getElementById("scroll");
+	// var scrolltop = window.pageYOffset - getElemDistance(img);
+	// img.style.backgroundPosition = scrolltop / 10 - img.offsetWidth/5 + 'px center';
 	changeHeader();
 	fadeInAndOutSection();
 }
@@ -34,23 +34,20 @@ var getElemDistance = function ( elem ) {
 };
 
 function changeHeader() {
-	var header = document.getElementsByTagName("header")[0];
-	if(window.pageYOffset + header.offsetHeight >= window.innerHeight) {
-		header.style.background = "rgba(0, 0, 0, 0.7)";
+	if(window.pageYOffset + document.getElementsByTagName("header")[0].offsetHeight >= window.innerHeight) {
+		document.getElementsByTagName("header")[0].style.background = "rgba(0, 0, 0, 0.7)";
 	}else {
-		header.style.background = "rgba(0, 0, 0, 0.04)";
+		document.getElementsByTagName("header")[0].style.background = "rgba(0, 0, 0, 0.04)";
 	}
 
 }
 
 function fadeInAndOutSection() {
 	for (var i = document.getElementsByClassName("section").length - 1; i >= 0; i--) {
-		var section = document.getElementsByClassName("section")[i];
-		var fromTop = section.getBoundingClientRect().top;
-		if(fromTop <= window.innerHeight * 0.65 && fromTop >= window.innerHeight * -0.80) {
-			section.style.opacity = "1";
+		if(document.getElementsByClassName("section")[i].getBoundingClientRect().top <= window.innerHeight * 0.65 && document.getElementsByClassName("section")[i].getBoundingClientRect().top >= window.innerHeight * -0.80) {
+			document.getElementsByClassName("section")[i].style.opacity = "1";
 		}else {
-			section.style.opacity = "0";
+			document.getElementsByClassName("section")[i].style.opacity = "0";
 		}
 	}
 }

@@ -47,7 +47,7 @@ header {
 	padding: 1em;
 	background-color: rgba(0, 0, 0, 0.04);
 	visibility: hidden;
-	
+	transition: background 1s ease-in-out;
 }
 
 header h1 {
@@ -75,12 +75,7 @@ header h1 {
 	height: 100vh;
 	background-image: linear-gradient(
       rgba(59, 180, 119, 0.3), 
-      rgba(59, 180, 119, 0.4)),
-	  url("../images/landing-page.gif");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
+      rgba(59, 180, 119, 0.4));
 }
 
 .landing-page h1 {
@@ -116,7 +111,7 @@ header h1 {
 	padding: 4em 0;
 	overflow: hidden;
 	opacity: 0;
-	transition: opacity 2s ease-in-out;
+	transition: opacity 1s ease-in-out;
 }
 
 .section .text-holder {
@@ -368,4 +363,66 @@ header h1 {
     margin-right: calc(1.75em);
   }
 
+}
+
+/* ------------ Checking for landscape mode to rotate gif ----------- */
+@media only screen and (orientation: portrait) {
+	.landing-page {
+		background: url("../images/landing-page-rotated.gif");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+	}
+}
+
+@media only screen and (orientation: landscape) {
+	.landing-page {
+		background: url("../images/landing-page.gif");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+	}
+}
+
+/* ------------- Check screen resolution for smaller images ------------ */
+@media screen and (max-width: 481px) {
+	#drawing {background-image: url('../images/480p/drawing.jpg');}
+	#test-guy {background-image: url('../images/480p/testing-guy.jpg');}
+	#code {background-image: url('../images/480p/code.png');}
+	#socket {background-image: url('../images/480p/socket.jpg');}
+	#inside2 {background-image: url('../images/480p/inside2.jpg');}
+}
+
+@media screen and (min-width: 481px) and (max-width: 668px) {
+	#drawing {background-image: url('../images/667p/drawing.jpg');}
+	#test-guy {background-image: url('../images/667p/testing-guy.jpg');}
+	#code {background-image: url('../images/667p/code.png');}
+	#socket {background-image: url('../images/667p/socket.jpg');}
+	#inside2 {background-image: url('../images/667	p/inside2.jpg');}
+}
+
+@media screen and (min-width: 668px) and (max-width: 769px) {
+	#drawing {background-image: url('../images/768p/drawing.jpg');}
+	#test-guy {background-image: url('../images/768p/testing-guy.jpg');}
+	#code {background-image: url('../images/768p/code.png');}
+	#socket {background-image: url('../images/768p/socket.jpg');}
+	#inside2 {background-image: url('../images/768p/inside2.jpg');}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1081px) {
+	#drawing {background-image: url('../images/1080p/drawing.jpg');}
+	#test-guy {background-image: url('../images/1080p/testing-guy.jpg');}
+	#code {background-image: url('../images/1080p/code.png');}
+	#socket {background-image: url('../images/1080p/socket.jpg');}
+	#inside2 {background-image: url('../images/1080p/inside2.jpg');}
+}
+
+@media screen and (min-width: 1081px) {
+	#drawing {background-image: url('../images/drawing.jpg');}
+	#test-guy {background-image: url('../images/testing-guy.jpg');}
+	#code {background-image: url('../images/code.png');}
+	#socket {background-image: url('../images/socket.jpg');}
+	#inside2 {background-image: url('../images/inside2.jpg');}
 }
