@@ -44,7 +44,7 @@ function changeHeader() {
 
 function fadeInAndOutSection() {
 	for (var i = document.getElementsByClassName("section").length - 1; i >= 0; i--) {
-		if(document.getElementsByClassName("section")[i].getBoundingClientRect().top <= window.innerHeight * 0.65 && document.getElementsByClassName("section")[i].getBoundingClientRect().top >= window.innerHeight * -0.80) {
+		if(document.getElementsByClassName("section")[i].getBoundingClientRect().top <= window.innerHeight * 1 && document.getElementsByClassName("section")[i].getBoundingClientRect().bottom >= window.innerHeight * 0.07) {
 			document.getElementsByClassName("section")[i].style.opacity = "1";
 		}else {
 			document.getElementsByClassName("section")[i].style.opacity = "0";

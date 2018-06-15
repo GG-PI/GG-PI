@@ -105,165 +105,66 @@ header h1 {
 .section {
 	position: relative;
 	max-width: calc(90vh / 0.6666666);
-	width: 100%;
-	height: auto;
-	margin: auto;
-	padding: 4em 0;
-	overflow: hidden;
+	margin: 15em auto;
 	opacity: 0;
 	transition: opacity 1s ease-in-out;
 }
 
-.section .text-holder {
+.text-holder {
 	position: absolute;
+	z-index: 2;
+	width: 40%;
+	height: auto;
 	padding: 1em 0.5em 0.5em 0.5em;
 	background-color: rgb(24, 31, 28);
 	border-radius: 5px;
 }
 
-.section h3 {
+.text-holder h3 {
 	position: absolute;
-	margin: 0;
-	padding: 0 0.75em;
-	background-color: rgb(24, 31, 28);
+	top: calc(1em - 3px);
+	left: 50%;
+	transform: translate(-50%, -50%);
 	color: rgb(72, 178, 26);
-	
+	background-color: rgb(24, 31, 28);
+	margin: 0;
+	padding: 0 0.5em;
 }
 
-.section p {
-	position: relative;
+.text-holder p {
 	color: rgb(179, 191, 186);
-	border: 3px solid rgb(72, 178, 26);
+	border: solid rgb(72, 178, 26) 3px;
+	border-radius: 5px;
 	padding: 1em 0.5em 0.5em 0.5em;
+	margin: 0;
 }
 
-.section .image-holder {
-	position: absolute;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	background-attachment: fixed;
-}
-
-.box-wrapper {
+.image-holder {
 	position: relative;
-	padding-top: 66.6666%;
-}
-
-/* ---- Section with div at the left ----- */
-.section.left .text-holder {
-	z-index: 3;
-	top: 10%;
-	left: 10%;
-	width: 50%;
-	height: auto;
-}
-
-.section.left h3 {
-	z-index: 5;
-	left: 50%;
-	top: 0.3em;
-	transform: translateX(-50%);
-}
-
-.section.left p {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-}
-
-.section.left .image-holder {
-	right: 0;
-	top: 20%;
 	width: 80%;
-	height: 80%;
+	height: calc(75.6vh);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	background-position: center; 
 }
 
-/* -------- Section with div at the right ------ */
-.section.right .text-holder {
-	z-index: 3;
-	top: 10%;
-	right: 10%;
-	width: 50%;
-	height: auto;
+.left .text-holder {
+	top: -5em;
+	left: 5em;
 }
 
-.section.right h3 {
-	z-index: 5;
-	left: 50%;
-	top: 0.3em;
-	transform: translateX(-50%);
+.left .image-holder {
+	margin-left: 20%;
 }
 
-.section.right p {
-	width: 100%;
-	height: 100%;
-	margin: 0;
+.right .text-holder {
+	top: -5em;
+	right: 5em;
 }
 
-.section.right .image-holder {
-	left: 0;
-	top: 20%;
-	width: 80%;
-	height: 80%;
-}
-
-/* -------- Section with image at front and div at left ------- */
-.section.bleft .text-holder {
-	z-index: 3;
-	top: 10%;
-	right: 10%;
-	width: 50%;
-	height: auto;
-}
-
-.section.bleft h3 {
-	z-index: 5;
-	left: 50%;
-	top: 0.3em;
-	transform: translateX(-50%);
-}
-
-.section.bleft p {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-}
-
-.section.bleft .image-holder {
-	left: 0;
-	top: 20%;
-	width: 80%;
-	height: 80%;
-}
-
-/* -------- Section with image at front and div at right ------- */
-.section.bright .text-holder {
-	z-index: 3;
-	top: 10%;
-	right: 10%;
-	width: 50%;
-	height: auto;
-}
-
-.section.bright h3 {
-	z-index: 5;
-	left: 50%;
-	top: 0.3em;
-	transform: translateX(-50%);
-}
-
-.section.bright p {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-}
-
-.section.bright .image-holder {
-	left: 0;
-	top: 20%;
-	width: 80%;
-	height: 80%;
+.right .image-holder {
+	margin-right: 20%;
 }
 
 
@@ -435,15 +336,14 @@ header h1 {
 	#socket {background-image: url('../images/480p/socket.jpg');}
 	#inside2 {background-image: url('../images/480p/inside2.jpg');}
 
-	.section .image-holder {
-		position: absolute;
+	.image-holder {
 		background-repeat: no-repeat;
 		background-attachment: scroll;
 		background-size:cover;
 		-moz-background-size: cover;
 		-webkit-background-size: cover;
 		-o-background-size: cover;
-		background-position: center center; 
+		background-position: center; 
 	}
 	.landing-page {
 		background-repeat: no-repeat;
