@@ -18,7 +18,7 @@ function showBody() {
 		document.getElementsByTagName("section")[i].style.opacity = "1";
 	}
 	document.getElementsByTagName("header")[0].style.visibility = "visible";
-	document.getElementsByTagName("header")[0].style.animation = "header 2s ease-out 1s forwards";
+	document.getElementsByTagName("header")[0].style.animation = "header 2s ease-out forwards";
 	setTimeout(function() {document.getElementById("loading").style.display = "none";}, 1000);
 }
 
