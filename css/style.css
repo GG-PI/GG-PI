@@ -72,15 +72,31 @@ header h1 {
 	top: 0;
 	width: 100%;
 	max-width: none;
-	height: 106vh;
+	height: calc(100vh + 45px);
 	background-image: linear-gradient(
       rgba(59, 180, 119, 0.3), 
       rgba(59, 180, 119, 0.4));
-	/*for a few browsers*/ /* height: 45px width: 250px;*/
-	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 45px), calc(50% + 125px) calc(100% - 45px), 50% 100%, calc(50% - 125px) calc(100% - 45px), 0 calc(100% - 45px));
-	-moz-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 45px), calc(50% + 125px) calc(100% - 45px), 50% 100%, calc(50% - 125px) calc(100% - 45px), 0 calc(100% - 45px));
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 45px), calc(50% + 125px) calc(100% - 45px), 50% 100%, calc(50% - 125px) calc(100% - 45px), 0 calc(100% - 45px));
-	-o-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 45px), calc(50% + 125px) calc(100% - 45px), 50% 100%, calc(50% - 125px) calc(100% - 45px), 0 calc(100% - 45px));
+}
+
+.landing-page::before, .landing-page::after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	height: 0;
+    width: 0;
+	border-bottom: 45px solid rgb(59, 180, 119);
+}
+
+.landing-page::before {
+	left: 0;
+	border-left: calc(50vw - 125px) solid rgb(59, 180, 119);
+    border-right: 125px solid transparent;
+}
+
+.landing-page::after {
+	right: 0;
+	border-right: calc(50vw - 125px) solid rgb(59, 180, 119);
+    border-left: 125px solid transparent;
 }
 
 .landing-page h1 {
