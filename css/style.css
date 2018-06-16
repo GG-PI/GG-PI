@@ -72,10 +72,11 @@ header h1 {
 	top: 0;
 	width: 100%;
 	max-width: none;
-	height: 100vh;
+	height: 106vh;
 	background-image: linear-gradient(
       rgba(59, 180, 119, 0.3), 
       rgba(59, 180, 119, 0.4));
+	clip-path: polygon(0 0, 100% 0, 100% 95%, 60% 95%, 50% 100%, 40% 95%, 0 95%);
 }
 
 .landing-page h1 {
