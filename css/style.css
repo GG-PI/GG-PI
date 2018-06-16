@@ -76,10 +76,11 @@ header h1 {
 	background-image: linear-gradient(
       rgba(59, 180, 119, 0.3), 
       rgba(59, 180, 119, 0.4));
-	clip-path: polygon(0 0, 100% 0, 100% 95%, 60% 95%, 50% 100%, 40% 95%, 0 95%);
-	-moz-clip-path: polygon(0 0, 100% 0, 100% 95%, 60% 95%, 50% 100%, 40% 95%, 0 95%);
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 60% 95%, 50% 100%, 40% 95%, 0 95%);
-	-o-clip-path: polygon(0 0, 100% 0, 100% 95%, 60% 95%, 50% 100%, 40% 95%, 0 95%);
+	/*for a few browsers*/ /* height: 45px width: 250px;*/
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 45px), calc(50% + 125px) calc(100% - 45px), 50% 100%, calc(50% - 125px) calc(100% - 45px), 0 calc(100% - 45px));
+	-moz-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 45px), calc(50% + 125px) calc(100% - 45px), 50% 100%, calc(50% - 125px) calc(100% - 45px), 0 calc(100% - 45px));
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 45px), calc(50% + 125px) calc(100% - 45px), 50% 100%, calc(50% - 125px) calc(100% - 45px), 0 calc(100% - 45px));
+	-o-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 45px), calc(50% + 125px) calc(100% - 45px), 50% 100%, calc(50% - 125px) calc(100% - 45px), 0 calc(100% - 45px));
 }
 
 .landing-page h1 {
