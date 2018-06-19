@@ -188,6 +188,68 @@ header h1 {
 	margin-right: 20%;
 }
 
+.skew {
+	position: relative;
+	width: 100%;
+	height: 60vh;
+	background-color: rgb(24, 31, 28);
+}
+
+.skew-text {
+	position: relative;
+	padding: 1em;
+	color: rgb(179, 191, 186);
+}
+
+.skew-text h3 {
+	position: relative;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	right: 0;
+	text-align: center;
+	color: white/*rgb(72, 178, 26)*/;
+	/*background-color: rgb(72, 178, 26);*/
+}
+
+.skew-text h3::before, .skew-text h3::after {
+	position: absolute;
+	display: block;
+	content: '';
+	height: 100%;
+}
+
+.skew-text h3::before {
+	left: 0;
+	right: 0;
+	z-index: -2;
+	background-color: rgb(72, 178, 26);
+}
+
+.skew-text h3::after {
+	top: -1px;
+	width: 14em;
+	height: calc(100% + 2px);
+	left: calc(75% + 1em); 
+	transform: translateX(-50%);
+	z-index: -1;
+	background-color: rgb(24, 31, 28);
+	clip-path: polygon(0 0, 92% 0, 100% 100%, 8% 100%);
+}
+
+.skew-image {
+	position: relative;
+	height: 60vh;
+	width: 100%;
+	z-index: 2;
+	background-size: cover;
+	background-position: center center ;
+	background-attachment: scroll;
+	float: left;
+	shape-outside: polygon(0 0, calc(50% + 1em) 0, calc(75% + 1em) 100%, 0 100%);
+	clip-path: polygon(0 0, 50% 0, 75% 100%, 0 100%);
+}
+
 
 /* *************** KEY FRAMES ***************** */
 
