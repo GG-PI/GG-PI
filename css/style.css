@@ -162,17 +162,18 @@ header h1 {
 
 .image-holder {
 	position: relative;
-	width: 80%;
+	width: 75%;
 	height: calc(75.6vh);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size:cover;
-	background-position: center; 
+	background-position: center;
+	border-radius: 45px;
 }
 
 .left .text-holder {
-	top: -5em;
-	left: 5em;
+	top: -5%;
+	left: 5%;
 }
 
 .left .image-holder {
@@ -180,74 +181,13 @@ header h1 {
 }
 
 .right .text-holder {
-	top: -5em;
-	right: 5em;
+	top: -5%;
+	right: 5%;
 }
 
 .right .image-holder {
 	margin-right: 20%;
-}
-
-.skew {
-	position: relative;
-	width: 100%;
-	height: 60vh;
-	background-color: rgb(24, 31, 28);
-}
-
-.skew-text {
-	position: relative;
-	padding: 1em;
-	color: rgb(179, 191, 186);
-}
-
-.skew-text h3 {
-	position: relative;
-	z-index: 1;
-	margin: 0;
-	padding: 0;
-	right: 0;
-	text-align: center;
-	color: white/*rgb(72, 178, 26)*/;
-	/*background-color: rgb(72, 178, 26);*/
-}
-
-.skew-text h3::before, .skew-text h3::after {
-	position: absolute;
-	display: block;
-	content: '';
-	height: 100%;
-}
-
-.skew-text h3::before {
-	left: 0;
-	right: 0;
-	z-index: -2;
-	background-color: rgb(72, 178, 26);
-}
-
-.skew-text h3::after {
-	top: -1px;
-	width: 14em;
-	height: calc(100% + 2px);
-	left: calc(75% + 1em); 
-	transform: translateX(-50%);
-	z-index: -1;
-	background-color: rgb(24, 31, 28);
-	clip-path: polygon(0 0, 92% 0, 100% 100%, 8% 100%);
-}
-
-.skew-image {
-	position: relative;
-	height: 60vh;
-	width: 100%;
-	z-index: 2;
-	background-size: cover;
-	background-position: center center ;
-	background-attachment: scroll;
-	float: left;
-	shape-outside: polygon(0 0, calc(50% + 1em) 0, calc(75% + 1em) 100%, 0 100%);
-	clip-path: polygon(0 0, 50% 0, 75% 100%, 0 100%);
+	margin-left: 5%;
 }
 
 
@@ -377,6 +317,11 @@ header h1 {
 	#code {background-image: url('../images/480p/code.png');}
 	#socket {background-image: url('../images/480p/socket.jpg');}
 	#inside2 {background-image: url('../images/480p/inside2.jpg');}
+	.left .text-holder {top: -5%;left: 0;}
+	.left .image-holder {width: 80%;}
+	.right .text-holder {top: -5%;right: 0;}
+	.right .image-holder {width: 80%; margin-left: 0;}
+	.text-holder {width: 50%;}
 }
 
 @media screen and (min-width: 481px) and (max-width: 668px) {
@@ -385,6 +330,11 @@ header h1 {
 	#code {background-image: url('../images/667p/code.png');}
 	#socket {background-image: url('../images/667p/socket.jpg');}
 	#inside2 {background-image: url('../images/667	p/inside2.jpg');}
+	.left .text-holder {top: -5%;left: 0;}
+	.left .image-holder {width: 80%;}
+	.right .text-holder {top: -5%;right: 0;}
+	.right .image-holder {width: 80%; margin-left: 0;}
+	.text-holder {width: 50%;}
 }
 
 @media screen and (min-width: 668px) and (max-width: 769px) {
@@ -393,6 +343,11 @@ header h1 {
 	#code {background-image: url('../images/768p/code.png');}
 	#socket {background-image: url('../images/768p/socket.jpg');}
 	#inside2 {background-image: url('../images/768p/inside2.jpg');}
+	.left .text-holder {top: -5%;left: 0;}
+	.left .image-holder {width: 80%;}
+	.right .text-holder {top: -5%;right: 0;}
+	.right .image-holder {width: 80%; margin-left: 0;}
+	.text-holder {width: 50%;}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1081px) {
@@ -401,6 +356,11 @@ header h1 {
 	#code {background-image: url('../images/1080p/code.png');}
 	#socket {background-image: url('../images/1080p/socket.jpg');}
 	#inside2 {background-image: url('../images/1080p/inside2.jpg');}
+	.left .text-holder {top: -5%;left: 0;}
+	.left .image-holder {width: 80%;}
+	.right .text-holder {top: -5%;right: 0;}
+	.right .image-holder {width: 80%; margin-left: 0;}
+	.text-holder {width: 50%;}
 }
 
 @media screen and (min-width: 1081px) {
